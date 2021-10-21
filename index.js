@@ -37,7 +37,9 @@ function getEthHashrate(req, resMain){
             var hiveResponse = JSON.parse(body);
             hashrate = hiveResponse.data[0].hashrates[0].hashrate / 1000;
           }
-          catch(e){}
+          catch(e){
+            console.log("Got an error: ", e);
+          }
 
           let content = {
             "frames":[
