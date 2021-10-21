@@ -4,7 +4,7 @@
   "description": "An app to display the ETH hashrate of a given HiveOS account/farm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "index.js"
   },
   "author": "Connor Mackay",
   "license": "ISC",
