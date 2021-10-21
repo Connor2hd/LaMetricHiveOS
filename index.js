@@ -33,12 +33,11 @@ function getEthHashrate(req, resMain){
       });
 
       res.on('end', function(){
-          var hiveResponse = JSON.parse(body);
-          console.log("Got a response: ", hiveResponse);
-
-          if(hiveResponse.data != undefined){
-              hashrate = hiveResponse.data[0].hashrates[0].hashrate / 1000;
+          try {
+            var hiveResponse = JSON.parse(body);
+            hashrate = hiveResponse.data[0].hashrates[0].hashrate / 1000;
           }
+          catch(e){}
 
           let content = {
             "frames":[
