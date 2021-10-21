@@ -1,0 +1,15 @@
+{
+  "name": "lametrichiveoshashrate",
+  "version": "1.0.0",
+  "description": "An app to display the ETH hashrate of a given HiveOS account/farm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Connor Mackay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
