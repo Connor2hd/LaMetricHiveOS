@@ -42,7 +42,7 @@ function getEthHashrate(req, resMain){
 
           let content = {
             "frames":[
-              {"text":hashrate.toFixed(2), icon:"11216"}
+              {"text":hashrate.toFixed(2), icon:"i11216"}
             ]
           };
 
